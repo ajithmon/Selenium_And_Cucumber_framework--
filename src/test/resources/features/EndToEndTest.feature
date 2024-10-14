@@ -33,7 +33,7 @@ Background:
     Then verify cart icon displays quantity of all
     When user click on cart icon
     Then verify user is on cart page
-    And verify cart icon displays quantity of all
+    And  verify cart items count is same as we added
 
   Scenario: Verify user can compare price of order
     When user add all items to cart

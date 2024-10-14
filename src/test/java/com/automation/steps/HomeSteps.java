@@ -60,7 +60,7 @@ public class HomeSteps {
 
     @Then("verify cart icon displays quantity of all")
     public void verifyCartIconDisplaysQuantityOfAll() {
-        Assert.assertEquals(homePage.getCartIconQty(),"6");
+        Assert.assertEquals(homePage .getCartIconQty(),"6");
     }
 
     @And("verify remove button is not available")

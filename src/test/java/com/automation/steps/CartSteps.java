@@ -1,6 +1,7 @@
 package com.automation.steps;
 
 import com.automation.pages.CartPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -18,5 +19,10 @@ public class CartSteps {
     public void user_click_on_checkout_button() {
         cartPage.clickOnCheckoutBtn();
 
+    }
+
+    @And("verify cart items count is same as we added")
+    public void verifyCartItemsCountIsSameAsWeAdded() {
+        Assert.assertEquals(cartPage.cartAddedItemQty(),6);
     }
 }
