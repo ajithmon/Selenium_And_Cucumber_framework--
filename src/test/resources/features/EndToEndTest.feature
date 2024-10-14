@@ -5,7 +5,7 @@ Background:
   When user login with username "standard_user" and password "secret_sauce"
   Then verify user is on home page
 
-  @Smoke
+
   Scenario: Verify user can place order
     When user click on add to cart button of the first item
     Then verify cart icon displays quantity one
@@ -19,10 +19,11 @@ Background:
     When user click on Finish button
     Then verify user is on order confirmation page
 
+    @Smoke
   Scenario: Verify user can sort Z to A
     When click on Z to A category
     Then verify product sorted in Z to A
-
+    @Smoke
     Scenario: Verify user can sort high to low
     When click on High to Low
     Then verify product sorted in High to Low

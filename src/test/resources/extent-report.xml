@@ -1,0 +1,7 @@
+<configuration>
+    <reportName>My Project Report</reportName>
+    <theme>dark</theme>
+    <encoding>utf-8</encoding>
+    <protocol>https</protocol>
+    <timelineEnabled>true</timelineEnabled>
+</configuration>
